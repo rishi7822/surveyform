@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <main>
+        <p id="description">Let us know how we can improve freeCodeCapm</p>
+        <form id="survey-form">
+          <div class="form-elements">
+            <label for="name" id="name-label">Name</label>
+            <input
+              id="name"
+              class="form-input"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-elements">
+            <label for="email" id="email-label">Email</label>
+            <input
+              id="email"
+              class="form-input"
+              type="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-elements">
+            <label for="age" id="number-label">Age</label>
+            <input id="number" class="form-input" type="number" placeholder="Age" min='13' max="55" required />
+          </div>
+          <div class="role">
+              <label for="role"
+                >Which option best describes your current role?</label
+              >
+              <select name="role" id="dropdown" class="form-check__input">
+                <option value="Select an option" disabled
+                  >Select an Option</option
+                >
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Full tiem Learner">Full Time Tearner</option>
+                <option value="Prefer not say">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+          </div>
+
+          <div class="recommendation">
+            <p class="checks-description">How likely is that you would recommend freeCodeCamp to a friend?</p>
+            <div class="form-checks">
+                <div class="form-check">
+                    <input
+                      class="form-check__input"
+                      type="radio"
+                      name="recommendation"
+                      id="definitely"
+                      value="option1"
+                    />
+                    <label for="definitely" class="form-check__label"
+                      >Definitely</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check__input"
+                      type="radio"
+                      name="recommendation"
+                      id="maybe"
+                      value="option2"
+                    />
+                    <label for="maybe" class="form-check__label">Maybe</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check__input"
+                      type="radio"
+                      name="recommendation"
+                      id="notsure"
+                      value="notsure"
+                    />
+                    <label for="notsure" class="form-check__input">Not Sure</label>
+                  </div>
+            </div>
+                
+          </div>
+
+          <div class="form-elements">
+                <label for="role"
+                  >What do you like most in FCC?</label
+                >
+                <select name="likes" id="likes-select" class="form-input">
+                  <option value="Select an option" disabled
+                    >Select an Option</option
+                  >
+                  <option value="challenges">Challenges</option>
+                  <option value="projects">Projects</option>
+                  <option value="commmunity">Community</option>
+                  <option value="opens source">Open Source</option>
+                </select>
+              </div>
+              <div class="improvements">
+                <p class="checks-description">
+                  Things that should be improved in the future(Check all that apply)
+                </p>
+                <div class="form-checks">
+                    
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="frontend-projects"
+                          value="check1"
+                        />
+                        <label for="frontend" class="form-check__input">Front-end Projects</label>
+                
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="backend-projects"
+                          value="check2"
+                        />
+                        <label for="backend-projects" class="form-check__input"
+                        >Back-end Projects</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="data-visualization"
+                          value="check3"
+                        />
+                        <label for="data-visualization" class="form-check__input"
+                        >Data Visualization</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="challenges"
+                          value="check4"
+                        />
+                        <label for="challenges" class="form-check__input"
+                        >Challenges</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="open-source-comm"
+                          value="check5"
+                        />
+                        <label for="open-source-comm" class="form-check__input"
+                        >Open Source Community</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="gitter-help-rooms"
+                          value="check6"
+                        />
+                        <label for="gitter-help-rooms" class="form-check__input"
+                        >Gitter Help Rooms</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="videos"
+                          value="check7"
+                        />
+                        <label for="videos" class="form-check__input"
+                        >Videos</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="city-meetups"
+                          value="check8"
+                        />
+                        <label for="city-meetups" class="form-check__input"
+                        >City Meetups</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="wiki"
+                          value="check9"
+                        />
+                        <label for="wiki" class="form-check__input"
+                        >Wiki</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="forum"
+                          value="check10"
+                        />
+                        <label for="forum" class="form-check__input"
+                        >Forum</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check__input"
+                          type="checkbox"
+                          id="additional-courses"
+                          value="check11"
+                        />
+                        <label for="additional-courses" class="form-check__input"
+                        >Additional Courses</label
+                        >
+                      </div>
+                </div>
+              </div>
+              <div class="form-elements">
+                <label for="comments">Any comments or suggestion?</label>
+                <textarea name="comments" id="comments" class="form-input" cols="30" rows="3"></textarea>
+              </div>
+              <button type="submit" id="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
